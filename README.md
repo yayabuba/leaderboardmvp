@@ -13,7 +13,7 @@ GLHF!
 3. Is the implementation, data model and code organisation of a standard that matches the level of the position you are applying for
 
 ## Scenario
-The overwhelming majority of Sports, Games and gamified concepts have leaderboards. ACME Startup sees an opportunity to make it easy for other organisations to add a leaderboard feature set to their software products. ACME Startup wants to demonstrate to the market what their idea has to offer so invest in building a simple leaderboard application where data is submitted by authenticated users and the leaderboards can viewed by the public or by private invitation. If this leaderboard product is validated by the market, the business wants to create a SaaS out of it and ideally would like to avoid rework in order to enhance the feature set.
+The overwhelming majority of Sports, Games and gamified concepts have leaderboards. ACME Startup sees an opportunity to make it easy for other organisations to add a leaderboard feature set to their software products. ACME Startup wants to demonstrate to the market what their idea has to offer so invest in building a simple leaderboard application. Leaderboard data will be submitted by authenticated users and Leaderboards can viewed by the public or by private invitation. If this leaderboard product is validated by the market, the business wants to create a SaaS out of it and ideally would like to avoid rework and focus on enhancing the feature set.
 
 ## Logical Structures
 #### Competitor
@@ -26,7 +26,7 @@ A Head to Head (H2H) Contest defines a time when two Competitors compete to see 
 A Leaderboard contains a complete list of Competitors who will engage in H2H Contents in a Round Robin format. The leaderboard aggregates the total points from all H2H Contests that have completed.
 
 #### Referrees
-Referrees adjudicates a H2H Contest, ensureing that Competitors are playing in accordance with the rules. Referrees are also the authority for registering the score. Rherefore, Referrees must authenticate with the leaderboard service, find the matching H2H Contest and input the final score.
+Referrees adjudicates a H2H Contest, ensureing that Competitors are playing in accordance with the rules. Referrees are also the authority for registering the score. Therefore, Referrees are authenticated users of the leaderboard service, find the matching H2H Contest and input the final score.
 
 #### Subscribers
 Subscribers are users that want to view Leaderboards they are interested in. They can view any public Leaderboard as well as any private Leaderboard by invitation.
