@@ -26,7 +26,7 @@ A Head to Head (H2H) Contest defines a time when two Competitors compete to see 
 A Leaderboard contains a complete list of Competitors who will engage in H2H Contents in a Round Robin format. The leaderboard aggregates the total points from all H2H Contests that have completed.
 
 #### Referees
-Referees adjudicates a H2H Contest, ensureing that Competitors are playing in accordance with the rules. Referees are also the authority for registering the score. Therefore, Referees are authenticated users of the leaderboard service, find the matching H2H Contest and input the final score.
+Referees adjudicates a H2H Contest, ensuring that Competitors are playing in accordance with the rules. Referees are also the authority for registering the score. Therefore, Referees are authenticated users of the leaderboard service, find the matching H2H Contest and input the final score.
 
 #### Subscribers
 Subscribers are users that want to view Leaderboards they are interested in. They can view any public Leaderboard as well as any private Leaderboard by invitation.
