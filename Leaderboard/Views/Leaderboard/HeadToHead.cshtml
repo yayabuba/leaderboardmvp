@@ -1,0 +1,54 @@
+﻿
+@model Leaderboard.Models.HeadtoHeadModel
+
+@{
+    ViewBag.Title = "HeadToHead";
+}
+
+<h2>Add Head to Head</h2>
+
+@using (Html.BeginForm("AddHeadToHead", "Leaderboard", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <div class="editor-labelbr">
+            @Html.Label("Round")
+        </div>
+        @Html.DropDownListFor(m => m.SelectedRound, Model.RoundSelectList)
+
+        <div class="editor-label">
+            <br>
+            @Html.Label("Competitor 1")
+        </div>
+        <div>
+            @Html.Label("Name")
+            @Html.DropDownListFor(m => m.SelectedCompetitor1, Model.CompetitorSelectList)
+            @Html.Label("Points")
+            @Html.DropDownListFor(m => m.SelectedCompetitor1Points, Model.ValidPoints)
+        </div>
+
+        <div class="editor-label">
+            <br>
+            @Html.Label("Competitor 2")
+        </div>
+            @Html.Label("Name")
+            @Html.DropDownListFor(m => m.SelectedCompetitor2, Model.CompetitorSelectList)
+            @Html.Label("Points")
+            @Html.DropDownListFor(m => m.SelectedCompetitor2Points, Model.ValidPoints)
+        <div class="editor-label">
+        <p>
+            <br>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
