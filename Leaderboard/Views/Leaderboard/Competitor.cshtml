@@ -1,0 +1,35 @@
+﻿
+@model Leaderboard.Entities.Competitor
+
+@{
+    ViewBag.Title = "Competitor";
+}
+
+<h2>Add Competitor</h2>
+
+@using (Html.BeginForm("AddCompetitor", "Leaderboard", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <div class="editor-field">
+            @Html.LabelFor(model => model.Name)
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <br>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
